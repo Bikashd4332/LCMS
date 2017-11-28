@@ -19,7 +19,8 @@ extern SQLWCHAR* connectionString;
 //Functions for ODBC connection
 void gotoxy(short, short);
 void INITHandles(SQLCHAR* ); //Test passed
-void free_handle(); //Test passed
+void alloc_stmt(); //Test Passed
+void free_stmt(); //Test passed
 void show_error(char* , SQLSMALLINT , SQLHANDLE ); //Test passed
 
 
@@ -27,12 +28,9 @@ void show_error(char* , SQLSMALLINT , SQLHANDLE ); //Test passed
 void authentiation();
 char greeting(struct tm* localtime);
 
-
-
 //object functionalites
-void student_func();
-void admin_func();
-
+void student_func();//Test Passed
+void admin_func();//Test Passed
 
 //Functions for adding table data
 void lodge_complaints(); //Test passed
@@ -43,7 +41,7 @@ void add_machine();//Tesh passed
 void resolved_issues(); //Test passed
 void display_complaints(); //TTest Passed
 
-void weekly_status (); 
+void weekly_status (); //Test to be done
 
 //Functions for deleting record
 void del_lodge_complaints(); 
